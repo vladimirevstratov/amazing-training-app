@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 32px;
+}
+
+.inActiveContainer {
+    background-color: transparent;
+}
+
+.link {
+    text-decoration: none;
+    color: #16161640
+}
+
+.activeLink {
+    color: #161616
+}
+
+.link:hover {
+    color: #161616
+}
+
+.link:active {
+    color: #161616
+}
+
+.icon {
+    margin-right: 15px
+}

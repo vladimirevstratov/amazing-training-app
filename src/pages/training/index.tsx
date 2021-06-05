@@ -3,8 +3,8 @@ import MainLayout from '../../components/common/main-layout';
 
 const Training = () => {
   return (
-    <MainLayout>
-      <div>Training</div>
+    <MainLayout title={'Training'}>
+      <h2>Training</h2>
     </MainLayout>
   );
 };

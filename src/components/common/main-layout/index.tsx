@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Sider from '../sider';
 import { Col, Container, Row } from 'react-bootstrap';
 import styles from './index.module.css';
+import { appName } from '../../../constants/main';
 
 interface MainLayoutProps {
   children: JSX.Element;
+  title?: string;
 }
 
-const MainLayout = ({ children }: MainLayoutProps) => {
+const MainLayout = ({ children, title }: MainLayoutProps) => {
+  useEffect(() => {
+    if (title) {
+      document.title = `${title} | ${appName}`;
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <Container fluid={true}>
       <Row className={styles.container}>
