@@ -7,26 +7,34 @@ interface Step {
   order: number;
 }
 
-interface Exercise {
-  id: number;
+export type ExerciseId = number;
+
+export type ExerciseSteps = Step[];
+
+export interface Exercise {
+  id: ExerciseId;
   title: string;
   order: number;
   description: string;
   large_image: string;
   small_image: string;
-  steps: Step[];
+  steps: ExerciseSteps;
 }
 
-type Exercises = Exercise[];
+export type Exercises = Exercise[];
 
-const ExercisesList = () => {
-  const [exercises, setExercises] = useState<Exercises>([]);
+interface ExercisesListProps {
+  handleExerciseClick: ({ id }: { id: ExerciseId }) => void;
+  exercises: Exercises;
+}
 
-  useEffect(() => {
-    const data = JSON.parse(JSON.stringify(jsonData));
-
-    setExercises(data);
-  }, []);
+const ExercisesList = ({
+  handleExerciseClick,
+  exercises,
+}: ExercisesListProps) => {
+  const onExerciseClick = ({ id }: { id: ExerciseId }) => {
+    handleExerciseClick({ id });
+  };
 
   return (
     <>
@@ -38,9 +46,11 @@ const ExercisesList = () => {
           }}
         >
           <ListItem
+            id={exercise.id}
             url={exercise.small_image}
             alt={exercise.title}
             title={exercise.title}
+            onClick={onExerciseClick}
           />
         </div>
       ))}
