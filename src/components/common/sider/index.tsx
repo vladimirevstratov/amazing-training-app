@@ -11,7 +11,9 @@ const Sider = () => {
 
   return (
     <div className={styles.container}>
-      <img src={logo} alt="logo" width="146" height="37" />
+      <a href="/">
+        <img src={logo} alt="logo" width="146" height="37" />
+      </a>
       <div className={styles.menu}>
         {mainMenuStructure.map((item, index) => {
           const Icon = item.icon;
@@ -20,7 +22,8 @@ const Sider = () => {
           return (
             <div
               style={{
-                marginBottom: index !== mainMenuStructure.length ? '12px' : '0',
+                marginBottom:
+                  index !== mainMenuStructure.length - 1 ? '12px' : '0',
               }}
               key={item.url}
             >

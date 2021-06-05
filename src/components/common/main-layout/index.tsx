@@ -7,9 +7,16 @@ import { appName } from '../../../constants/main';
 interface MainLayoutProps {
   children: JSX.Element;
   title?: string;
+  pageTitle?: string;
+  pageDescription?: string;
 }
 
-const MainLayout = ({ children, title }: MainLayoutProps) => {
+const MainLayout = ({
+  children,
+  title,
+  pageTitle,
+  pageDescription,
+}: MainLayoutProps) => {
   useEffect(() => {
     if (title) {
       document.title = `${title} | ${appName}`;
@@ -23,7 +30,16 @@ const MainLayout = ({ children, title }: MainLayoutProps) => {
         <Col lg={3} className={styles.siderCol}>
           <Sider />
         </Col>
-        <Col lg={9}>{children}</Col>
+        <Col lg={1} />
+        <Col lg={8}>
+          <div>
+            <div className={styles.pageHeader}>
+              <h1>{pageTitle}</h1>
+              {pageDescription}
+            </div>
+            {children}
+          </div>
+        </Col>
       </Row>
     </Container>
   );

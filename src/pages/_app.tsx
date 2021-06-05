@@ -2,20 +2,19 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import UnderConstruction from './under-construction';
 import Training from './training';
+import { menuTitles, menuUrls } from '../constants/structures';
 
 export default function _app() {
   return (
     <Router>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
       <Switch>
-        <Route path="/discover">
-          <UnderConstruction />
+        <Route path={menuUrls.discover}>
+          <UnderConstruction pageTitle={menuTitles.discover} />
         </Route>
-        <Route path="/diet">
-          <UnderConstruction />
+        <Route path={menuUrls.diet}>
+          <UnderConstruction pageTitle={menuTitles.diet} />
         </Route>
-        <Route path="/">
+        <Route path={menuUrls.training}>
           <Training />
         </Route>
       </Switch>
