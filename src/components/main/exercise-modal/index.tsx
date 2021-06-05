@@ -30,14 +30,15 @@ const ExerciseModal = ({
 
   return (
     <Modal show={isShow} onHide={close} dialogClassName={styles.modal}>
-      <img src={imageUrl} className={styles.image} />
-      <a href="#" onClick={close} className={styles.close}>
+      <img alt={title} src={imageUrl} className={styles.image} />
+      <a href="/#" onClick={close} className={styles.close}>
         <CloseIcon />
       </a>
       <div className={styles.infoContainer}>
         <p className={styles.title}>{title}</p>
         {sortedSteps.map((step, index) => (
           <div
+            key={step.order}
             style={{
               marginBottom: index !== sortedSteps.length - 1 ? '38px' : '0',
             }}

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import jsonData from '../../../constants/data.json';
+import React from 'react';
 import ListItem from './list-item';
 
 interface Step {

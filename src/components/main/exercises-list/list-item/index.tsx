@@ -12,7 +12,7 @@ interface ListItemProps {
 
 const ListItem = ({ id, url, alt, title, onClick }: ListItemProps) => {
   return (
-    <a href="#" onClick={() => onClick({ id })} className={styles.link}>
+    <a href="/#" onClick={() => onClick({ id })} className={styles.link}>
       <div>
         <img
           src={url}
