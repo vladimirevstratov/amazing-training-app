@@ -1,7 +1,7 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import UnderConstruction from "./under-construction";
-import Training from "./training";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import UnderConstruction from './under-construction';
+import Training from './training';
 
 export default function _app() {
   return (

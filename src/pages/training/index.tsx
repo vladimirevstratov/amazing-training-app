@@ -1,5 +1,5 @@
-import React from "react";
-import MainLayout from "../../components/common/main-layout";
+import React from 'react';
+import MainLayout from '../../components/common/main-layout';
 
 const Training = () => {
   return (

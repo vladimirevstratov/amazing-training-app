@@ -1,4 +1,4 @@
-import MainLayout from "../../components/common/main-layout";
+import MainLayout from '../../components/common/main-layout';
 
 const UnderConstruction = () => {
   return (

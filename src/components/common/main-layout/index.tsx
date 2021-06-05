@@ -1,7 +1,7 @@
-import React from "react";
-import Sider from "../sider";
-import { Col, Container, Row } from "react-bootstrap";
-import styles from "./index.module.css";
+import React from 'react';
+import Sider from '../sider';
+import { Col, Container, Row } from 'react-bootstrap';
+import styles from './index.module.css';
 
 interface MainLayoutProps {
   children: JSX.Element;
