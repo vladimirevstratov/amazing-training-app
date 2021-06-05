@@ -3,10 +3,15 @@
 }
 
 .siderCol {
-  background-color: #eff0f3;
+  background-color: var(--second-bg-color);
 }
 
 .pageHeader {
   margin-top: 48px;
   margin-bottom: 34px;
+}
+
+.description {
+  font-size: 18px;
+  color: var(--third-text-color)
 }

@@ -12,19 +12,19 @@
 
 .link {
     text-decoration: none;
-    color: #16161640
+    color: var(--second-text-color)
 }
 
 .activeLink {
-    color: #161616
+    color: var(--main-text-color)
 }
 
 .link:hover {
-    color: #161616
+    color: var(--main-text-color)
 }
 
 .link:active {
-    color: #161616
+    color: var(--main-text-color)
 }
 
 .icon {

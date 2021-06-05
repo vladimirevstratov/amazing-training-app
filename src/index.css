@@ -3,6 +3,10 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --main-text-color: #161616;
+  --second-text-color: #16161640;
+  --third-text-color: #16161650;
+  --second-bg-color: #eff0f3;
 }
 
 code {

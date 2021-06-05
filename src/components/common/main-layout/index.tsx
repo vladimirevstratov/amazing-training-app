@@ -35,7 +35,7 @@ const MainLayout = ({
           <div>
             <div className={styles.pageHeader}>
               <h1>{pageTitle}</h1>
-              {pageDescription}
+              <span className={styles.description}>{pageDescription}</span>
             </div>
             {children}
           </div>
