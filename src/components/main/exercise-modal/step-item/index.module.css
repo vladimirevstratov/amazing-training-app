@@ -1,0 +1,8 @@
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text {
+    color: var(--third-text-color)
+}
