@@ -10,7 +10,6 @@ import Training from "./training";
 export default function _app() {
   return (
       <Router>
-        <div>
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
@@ -24,7 +23,6 @@ export default function _app() {
               <Training />
             </Route>
           </Switch>
-        </div>
       </Router>
   );
 }

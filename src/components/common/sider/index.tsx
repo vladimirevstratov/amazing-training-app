@@ -1,9 +1,10 @@
 import {Link} from "react-router-dom";
 import React from "react";
+import styles from './index.module.css'
 
 const Sider = () => {
     return (
-        <>
+        <div className={styles.container}>
         <nav>
             <ul>
                 <li>
@@ -17,7 +18,7 @@ const Sider = () => {
                 </li>
             </ul>
         </nav>
-        </>
+        </div>
     )
 }
 
