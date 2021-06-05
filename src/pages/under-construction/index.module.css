@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button {
+    margin-top: 39px;
+    background-color: var(--main-button-color);
+    border-radius: 40px;
+    border: none;
+    padding: 24px 40px 24px 40px;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--main-white-color)
+}
+
+.button:hover {
+    color: var(--main-white-color)
+}
+
+.button:hover {
+    background-color: var(--main-button-color);
+}
+
+
+.text {
+    margin-top: 35px;
+}
