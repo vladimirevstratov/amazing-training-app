@@ -31,7 +31,7 @@ const MainLayout = ({
           <Sider />
         </Col>
         <Col md={1} />
-        <Col md={8}>
+        <Col md={7}>
           <div className={styles.contentContainer}>
             <div className={styles.pageHeader}>
               <h1>{pageTitle}</h1>
@@ -40,6 +40,7 @@ const MainLayout = ({
             {children}
           </div>
         </Col>
+        <Col md={1} />
       </Row>
     </Container>
   );
