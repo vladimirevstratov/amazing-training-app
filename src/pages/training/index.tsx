@@ -3,25 +3,27 @@ import MainLayout from '../../components/common/main-layout';
 import ExercisesList, {
   Exercise,
   ExerciseId,
-  Exercises,
 } from '../../components/main/exercises-list';
 import { menuTitles } from '../../constants/structures';
 import ExerciseModal from '../../components/main/exercise-modal';
-import jsonData from '../../constants/data.json';
+import { useMst } from '../../models/root-store';
 
 const Training = () => {
   const [isModalShow, setIsModalShow] = useState(false);
   const [currentExercise, setCurrentExercise] = useState<Exercise>(
     {} as Exercise
   );
-  const [exercises, setExercises] = useState<Exercises>([]);
+
+  const store = useMst();
+
+  const { allExercises } = store.exercises;
 
   const handleExerciseClick = ({ id }: { id: ExerciseId }) => {
-    const clickedExercise = exercises.find((exercise) => exercise.id === id);
+    const clickedExercise = allExercises.find((exercise) => exercise.id === id);
 
     if (clickedExercise) {
       setIsModalShow(true);
-      setCurrentExercise(clickedExercise);
+      setCurrentExercise({ ...clickedExercise });
     } else {
       console.error('Cant find exercise');
     }
@@ -32,9 +34,9 @@ const Training = () => {
   };
 
   useEffect(() => {
-    const data = JSON.parse(JSON.stringify(jsonData));
+    store.exercises.getExercisesRequest();
 
-    setExercises(data);
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -45,7 +47,7 @@ const Training = () => {
     >
       <>
         <ExercisesList
-          exercises={exercises}
+          exercises={allExercises}
           handleExerciseClick={handleExerciseClick}
         />
         <ExerciseModal

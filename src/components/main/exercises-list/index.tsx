@@ -1,5 +1,6 @@
 import React from 'react';
 import ListItem from './list-item';
+import { observer } from 'mobx-react-lite';
 
 interface Step {
   text: string;
@@ -27,34 +28,33 @@ interface ExercisesListProps {
   exercises: Exercises;
 }
 
-const ExercisesList = ({
-  handleExerciseClick,
-  exercises,
-}: ExercisesListProps) => {
-  const onExerciseClick = ({ id }: { id: ExerciseId }) => {
-    handleExerciseClick({ id });
-  };
+const ExercisesList = observer(
+  ({ handleExerciseClick, exercises }: ExercisesListProps) => {
+    const onExerciseClick = ({ id }: { id: ExerciseId }) => {
+      handleExerciseClick({ id });
+    };
 
-  return (
-    <>
-      {exercises.map((exercise, index) => (
-        <div
-          key={exercise.id}
-          style={{
-            marginBottom: index !== exercises.length - 1 ? '16px' : '0',
-          }}
-        >
-          <ListItem
-            id={exercise.id}
-            url={exercise.small_image}
-            alt={exercise.title}
-            title={exercise.title}
-            onClick={onExerciseClick}
-          />
-        </div>
-      ))}
-    </>
-  );
-};
+    return (
+      <>
+        {exercises.map((exercise, index) => (
+          <div
+            key={exercise.id}
+            style={{
+              marginBottom: index !== exercises.length - 1 ? '16px' : '0',
+            }}
+          >
+            <ListItem
+              id={exercise.id}
+              url={exercise.small_image}
+              alt={exercise.title}
+              title={exercise.title}
+              onClick={onExerciseClick}
+            />
+          </div>
+        ))}
+      </>
+    );
+  }
+);
 
 export default ExercisesList;

@@ -24,7 +24,9 @@ const ExerciseModal = ({
 
   useEffect(() => {
     if (steps) {
-      setSortedSteps(steps.sort((a, b) => a.order - b.order));
+      const stepsCopy = [...steps];
+
+      setSortedSteps(stepsCopy.sort((a, b) => a.order - b.order));
     }
   }, [steps]);
 
