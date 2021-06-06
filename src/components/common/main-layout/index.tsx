@@ -27,11 +27,11 @@ const MainLayout = ({
   return (
     <Container fluid={true}>
       <Row className={styles.container}>
-        <Col lg={3} className={styles.siderCol}>
+        <Col md={3} className={styles.siderCol}>
           <Sider />
         </Col>
-        <Col lg={1} />
-        <Col lg={8}>
+        <Col md={1} />
+        <Col md={8}>
           <div className={styles.contentContainer}>
             <div className={styles.pageHeader}>
               <h1>{pageTitle}</h1>
