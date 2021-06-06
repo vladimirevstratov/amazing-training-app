@@ -1,5 +1,9 @@
 # Amazing training app
 
+![version](https://img.shields.io/badge/version-0.1.0-blue.svg)
+
+<img width="1351" alt="Снимок экрана 2021-06-06 в 14 35 30" src="https://user-images.githubusercontent.com/30527831/120916567-8f088a00-c6d4-11eb-9fd1-915314136d2f.png">
+
 ## 1. What this app is?
 This is the app for training, discover and diet
 
