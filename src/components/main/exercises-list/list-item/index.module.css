@@ -9,10 +9,20 @@
 
 .image {
     border-radius: 24px;
+    width: 88px;
+    height:88px;
 }
 
 .title {
     font-size: 18px;
     font-weight: bold;
     margin-left: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .image {
+        border-radius: 16px;
+        width: 60px;
+        height: 60px;
+    }
 }

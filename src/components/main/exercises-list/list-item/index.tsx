@@ -14,13 +14,7 @@ const ListItem = ({ id, url, alt, title, onClick }: ListItemProps) => {
   return (
     <a href="/#" onClick={() => onClick({ id })} className={styles.link}>
       <div>
-        <img
-          src={url}
-          alt={alt}
-          width="88"
-          height="88"
-          className={styles.image}
-        />
+        <img src={url} alt={alt} className={styles.image} />
         <span className={styles.title}>{title}</span>
       </div>
     </a>

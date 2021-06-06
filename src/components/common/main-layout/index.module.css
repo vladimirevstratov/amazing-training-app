@@ -15,3 +15,22 @@
   font-size: 18px;
   color: var(--third-text-color)
 }
+
+.contentContainer {
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    min-height: 100%;
+  }
+
+  .contentContainer {
+    padding: 15px;
+  }
+
+  .pageHeader {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

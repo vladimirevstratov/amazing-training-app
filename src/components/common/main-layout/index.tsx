@@ -32,7 +32,7 @@ const MainLayout = ({
         </Col>
         <Col lg={1} />
         <Col lg={8}>
-          <div>
+          <div className={styles.contentContainer}>
             <div className={styles.pageHeader}>
               <h1>{pageTitle}</h1>
               <span className={styles.description}>{pageDescription}</span>

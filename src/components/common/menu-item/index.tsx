@@ -7,13 +7,21 @@ interface MenuItemProps {
   icon: any;
   title: string;
   isActive: boolean;
+  closeMobileMenu: () => void;
 }
 
-const MenuItem = ({ url, icon, title, isActive }: MenuItemProps) => {
+const MenuItem = ({
+  url,
+  icon,
+  title,
+  isActive,
+  closeMobileMenu,
+}: MenuItemProps) => {
   return (
     <Link
       to={url}
       className={`${styles.link} ${isActive ? styles.activeLink : null}`}
+      onClick={closeMobileMenu}
     >
       <div
         className={`${styles.container} ${
