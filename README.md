@@ -41,7 +41,6 @@ Functional components<br />
 - pages - Screens
 - images - Images
 - icons - Icons
-- theme - Theme variables
 - utils - Helpers
 
 ## 6. 💎 License
