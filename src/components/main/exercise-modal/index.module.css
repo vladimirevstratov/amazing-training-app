@@ -34,4 +34,8 @@
     .modal {
         margin: 24px;
     }
+
+    .title {
+        font-size: 18px;
+    }
 }

@@ -30,3 +30,9 @@ body.modal-open > :not(.modal) {
   -ms-filter: blur(1px);
   filter: blur(1px);
 }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+}
