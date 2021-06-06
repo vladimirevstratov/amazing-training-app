@@ -7,6 +7,8 @@
 ## 1. What this app is?
 This is the app for training, discover and diet
 
+[Deployed demo](https://amazing-training-app.web.app/)
+
 ## 2. 🎉 Getting started
 
 Install dependencies:<br />
