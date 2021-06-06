@@ -1,8 +1,8 @@
 export enum NetMethod {
-  GET = "GET",
-  POST = "POST",
-  DELETE = "DELETE",
-  UPDATE = "UPDATE",
-  PUT = "PUT",
-  PATCH = "PATCH",
+  GET = 'GET',
+  POST = 'POST',
+  DELETE = 'DELETE',
+  UPDATE = 'UPDATE',
+  PUT = 'PUT',
+  PATCH = 'PATCH',
 }

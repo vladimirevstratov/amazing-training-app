@@ -15,16 +15,16 @@
 
 .mobileButton {
   background-color: Transparent;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
   overflow: hidden;
-  outline:none;
+  outline: none;
 }
 
 .overlay {
   position: absolute;
-  top:70px;
+  top: 70px;
   left: 0;
   background-color: #00000050;
   width: 100%;
