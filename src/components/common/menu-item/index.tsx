@@ -4,6 +4,7 @@ import styles from './index.module.css';
 
 interface MenuItemProps {
   url: string;
+  //eslint-disable-next-line
   icon: any;
   title: string;
   isActive: boolean;

@@ -2,6 +2,7 @@ import { NetMethod } from '../constants/network/net-methods';
 import { currentHost, urlPrefix } from '../constants/network/network';
 
 declare type AnyObject = {
+  // eslint-disable-next-line
   [key: string]: any;
 };
 

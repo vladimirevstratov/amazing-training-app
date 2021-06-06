@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import styles from './index.module.css';
 import StepItem from './step-item';
 import { ReactComponent as CloseIcon } from '../../../icons/close.svg';
+import React from 'react';
 
 interface ExerciseModalProps {
   isShow: boolean;

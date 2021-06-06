@@ -3,6 +3,7 @@ import cup from '../../images/cup.png';
 import { menuTitles, menuUrls } from '../../constants/structures';
 import { useHistory } from 'react-router-dom';
 import styles from './index.module.css';
+import React from 'react';
 
 interface UnderConstructionProps {
   pageTitle: string;

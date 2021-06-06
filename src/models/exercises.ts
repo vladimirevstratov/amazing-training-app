@@ -21,6 +21,7 @@ export const Exercises = types
     allExercises: types.optional(types.array(Exercise), []),
   })
   .actions((self) => ({
+    // eslint-disable-next-line
     updateExercises(json: any) {
       self.allExercises = json;
     },
